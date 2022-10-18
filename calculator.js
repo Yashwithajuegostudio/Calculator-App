@@ -1,12 +1,12 @@
-var readline = require("readline-sync");
+const readline = require("readline-sync");
 
 function readTwoNumber() {
-  let num1 = parseFloat(readline.question("Enter the first number: "));
-  let num2 = parseFloat(readline.question("Enter the Second number: "));
+  const num1 = parseFloat(readline.question("Enter the first number: "));
+  const num2 = parseFloat(readline.question("Enter the Second number: "));
   return { num1, num2 };
 }
 function calculate(operator) {
-  let { num1, num2 } = readTwoNumber();
+  const { num1, num2 } = readTwoNumber();
   let result;
   switch (operator) {
     case "+":
